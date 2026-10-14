@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0510">
+<title>Quiz de Halloween MenoCare</title>
+<meta name="description" content="6 perguntas para descobrir qual personagem de terror voce e.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nunito:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="floaters" id="floaters" aria-hidden="true"></div>
+
+<main>
+  <img class="logo" alt="MenoCare" src="assets/logo-menocare.svg">
+
+  <!-- INTRO -->
+  <section class="card" id="intro">
+    <div class="pumpkin">🎃</div>
+    <h1>Qual personagem de terror você é?</h1>
+    <p class="sub">6 perguntas. Zero ciência.</p>
+    <button class="btn" id="start">Descobrir meu personagem 🔪</button>
+  </section>
+
+  <!-- PERGUNTAS -->
+  <section class="card hidden" id="quiz">
+    <div class="progress"><i id="bar"></i></div>
+    <div class="count" id="count"></div>
+    <div class="q" id="question"></div>
+    <div class="opts" id="options"></div>
+  </section>
+
+  <!-- RESULTADO -->
+  <section class="card hidden" id="result">
+    <div class="result-top">Seu personagem foi revelado!</div>
+    <div class="photo" id="r-photo"></div>
+    <h2 class="title" id="r-name"></h2>
+    <p class="desc" id="r-desc"></p>
+    <p class="quote" id="r-quote"></p>
+    <p class="hint">Procure na festa quem tirou o mesmo que você 👀</p>
+    <button class="btn" id="again">Refazer o quiz 🔁</button>
+  </section>
+
+  <div class="foot">MenoCare · Festa de Halloween 🎃</div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
